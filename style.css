@@ -1,0 +1,16 @@
+h1, h2 {
+    font-weight: bold;
+    margin-top: 75px;
+    color: rgb(255, 100, 0);
+}
+
+p {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 32px;
+}
