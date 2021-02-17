@@ -13,7 +13,7 @@ book.html : book.md
 	@$(PANDOC) --standalone --from markdown --to html5 --highlight-style tango $< -o $@
 
 push : book.pdf book.html
-	@echo "🚀 Pushing generated PDF and HTML to GIT repository"
+	@echo "🚀 Pushing new changes to GIT repository"
 	-@git add $^
 	-@git commit -m "Auto generate PDF and HTML from book"
 	@git push $(GIT_REMOVE_REPOSITORY) $(GIT_BRANCH)
