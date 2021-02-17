@@ -1,0 +1,31 @@
+== Requirements
+This project uses Pandoc [1] and Docker [2]
+to generate PDF and HTML from book.md.
+
+[1]: https://pandoc.org
+[2]: https://www.docker.com
+
+== Generate HTML from book
+To generate HTML from the book.md file, use:
+
+make book.html
+
+== Generate PDF from book
+To generate PDF from the book.md file, use:
+
+make book.pdf
+
+== Clean
+To remove the generated PDF and HTML from book.md, use:
+
+make clean
+
+== Push changes
+To push new changes in the GIT repository, use
+
+git add .
+git commit -m "Your changes"
+make push
+
+This will make sure both, PDF and HTML are generated
+and pushed to the repository as well.
