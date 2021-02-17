@@ -1,3 +1,13 @@
+== Read the book
+You can read the book online from:
+
+https://github.com/Ruk33/a-short-pocket-hand-guide-notes-on-how-to-write-good-code/blob/master/book.pdf
+
+Or download it:
+
+PDF  : https://github.com/Ruk33/a-short-pocket-hand-guide-notes-on-how-to-write-good-code/raw/master/book.pdf
+HTML : https://github.com/Ruk33/a-short-pocket-hand-guide-notes-on-how-to-write-good-code/raw/master/book.html
+
 == Requirements
 This project uses Pandoc [1] and Docker [2]
 to generate PDF and HTML from book.md.
