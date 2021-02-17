@@ -1,6 +1,6 @@
 PANDOC					= docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex
 GIT_REMOVE_REPOSITORY	= origin
-GIT_BRANCH				= HEAD
+GIT_BRANCH				= master
 
 .PHONY : push clean
 
