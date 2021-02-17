@@ -1,10 +1,14 @@
-# A short, pocket-hand notes on how to write good code
+---
+title: A short, pocket-hand notes on how to write good code
+author: Franco Montenegro
+date: February 17, 2021
+---
 
-By Franco Montenegro
 
-<div class="page"/>
+\pagebreak
 
-## Who are you coding for
+
+# Who are you coding for
 Let's begin really simple and by establishing this fact that more than often
 gets forgotten by developers. Code is written for and by developers,
 this means:
@@ -27,8 +31,10 @@ time in the world nothing would get done and it would just be plain boring,
 so, let's crack into it!
 
 
+\pagebreak
 
-## Names
+
+# Names
 Simple and strait forward, names need to be short, sweet and to the point.
 If you can't think of a good name, leave a comment and make sure that, when
 you have a deeper understanding of the problem you come back and refactor.
@@ -39,7 +45,7 @@ when you gain deeper knowledge you come back and clean after yourself
 by choosing a more descriptive name.
 
 ```c
-void n()
+int n()
 {
     int p = 42;
     return p;
@@ -59,8 +65,10 @@ int get_maximum_age()
 Short, sweet and to the point, no ambiguity whatsoever.
 
 
+\pagebreak
 
-## Code style
+
+# Code style
 The key point here is to be consistent, it doesn't matter if you
 wanna use tabs or spaces for your indentation; or if you wanna
 use camel case, snake case, etc., just focus on being consistent.
@@ -79,8 +87,10 @@ Make sure that, if you do so, you let your entire team know to avoid dealing
 with merge conflicts.
 
 
+\pagebreak
 
-## Over engineer
+
+# Over engineer
 Do not start trying to hit the perfect implementation, API or abstraction, you
 wont. The reason is that, you are trying to perfect something that doesn't
 even exist yet, which means, you are establishing facts based on things that,
@@ -93,8 +103,10 @@ but, having the wrong abstraction could lead you to much worse results.
 This is because you are enforcing a way of doing things.
 
 
+\pagebreak
 
-### Expanding on "clearly" see the errors/imperfections
+
+## Expanding on "clearly" see the errors/imperfections
 Every single project you come in, you probably are disgusted by how things
 are built and, if you are not, I'm very happy for you, you found a pretty
 good project to work on and learn from!
@@ -108,8 +120,10 @@ literally seeing his/her experience on your monitor, so let's learn from it
 and **slowly** and **safely** refactor, avoiding the mess from getting bigger.
 
 
+\pagebreak
 
-## Slow and safe refactoring
+
+# Slow and safe refactoring
 Going back to my previous suggestion on slowly and safely refactoring, I'm
 making special emphasis on **slowly** and **safely** refactoring because
 you don't wanna be the new developer who came in and broke the entire
@@ -124,8 +138,10 @@ to another, and it also allows your teammates to become familiar with
 the new changes.
 
 
+\pagebreak
 
-## Coding things you don't quite understand yet
+
+# Coding things you don't quite understand yet
 Sometimes we get a rough idea on how the system, library, component will work
 but we are not clear on the inner details, sometimes is quite the opposite,
 we can clearly see how the internal components will work but we haven't 
@@ -162,6 +178,8 @@ void move_entity(struct Entity entity, int to_x, int to_y)
 
 Simple right?, now it's the time to refactor:
 
+\pagebreak
+
 ```c
 struct Location
 {
@@ -181,8 +199,10 @@ have a `struct Location` instead of plain `x` and `y`. But, before doing so
 make sure you do a slow and safe refactor.
 
 
+\pagebreak
 
-## Comments
+
+# Comments
 Some people will tell you that you don't really need comments, that your
 code should be descriptive enough to tell the developers reading it 
 everything they need to know. Others will tell you, comments are essential 
@@ -215,8 +235,10 @@ And this is the kind of comments projects usually need, intention, and
 notes that we can't clearly and simple see by just reading the code.
 
 
+\pagebreak
 
-## Understanding what the code does
+
+# Understanding what the code does
 If something you wrote works but you don't know why, that's a ticking
 bomb ready to explode in the near feature. Not only that, it's very
 unprofessional, imagining yourself not being able to answer to your client 
@@ -228,21 +250,29 @@ are solving or, your code is not simply easy to follow/read. In any case,
 go back until you get a simple solution.
 
 
+\pagebreak
 
-## Parameters
+
+# Parameters
 TODO
 
 
+\pagebreak
 
-## Clear responsibility on functions
+
+# Clear responsibility on functions
 TODO
 
 
+\pagebreak
 
-## Design patterns
+
+# Design patterns
 TODO
 
 
+\pagebreak
 
-## Handling errors
+
+# Handling errors
 TODO
