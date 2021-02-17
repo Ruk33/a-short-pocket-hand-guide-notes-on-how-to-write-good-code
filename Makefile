@@ -1,4 +1,6 @@
-PANDOC	= docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex
+PANDOC					= docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex
+GIT_REMOVE_REPOSITORY	= origin
+GIT_BRANCH				= HEAD
 
 .PHONY : push clean
 
@@ -14,7 +16,7 @@ push : book.pdf book.html
 	@echo "🚀 Pushing generated PDF and HTML to GIT repository"
 	@git add $^
 	@git commit -m "Auto generate PDF and HTML from book"
-	@git push origin master
+	@git push $(GIT_REMOVE_REPOSITORY) $(GIT_BRANCH)
 
 clean :
 	@echo "🗑️ Remove generated PDF and HTML"
